@@ -20,7 +20,7 @@ const invokeAction = async({ action='list', id, name, email, phone })=> {
               console.table(data);
               break;
           case 'get':
-              const contactById = await contactsOperations.contactById(Number(id));
+              const contactById = await contactsOperations.contactById(id);
               console.log(contactById);
               break;
           case 'add':
